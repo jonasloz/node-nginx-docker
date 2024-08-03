@@ -5,6 +5,8 @@ services:
       context: node
     container_name: app
     entrypoint: dockerize -wait tcp://db:3306 -timeout 120s docker-entrypoint.sh
+    volumes:
+      - ./node/node_files:/usr/src/app
     command: node index.js
     networks:
       - node-network
