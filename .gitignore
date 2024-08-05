@@ -2,6 +2,7 @@
 mysql/.DS_Store
 nginx/.DS_Store
 node/.DS_Store
+node/node_files/node_modules
 mysql/mysql_files
 .idea
 node-nginx-docker.iml
